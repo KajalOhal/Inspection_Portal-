@@ -1,0 +1,15 @@
+<!-- inspector-login.component.html -->
+<div class="inspector-login-container">
+    <h1>Welcome</h1>
+    <div class="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="username" />
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="password" />
+  
+      <button (click)="login()">Login</button>
+      
+    </div>
+  </div>
+  

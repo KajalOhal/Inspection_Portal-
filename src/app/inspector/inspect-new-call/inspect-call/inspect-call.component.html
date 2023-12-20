@@ -1,0 +1,30 @@
+<!-- inspect-call.component.html -->
+<div class="inspect-call-container">
+    <h2>Inspect Call</h2>
+  
+    <!-- Display Call_No and Vendor_Name -->
+    <div class="call-details">
+      <p><strong>Call_No:</strong> {{ callNo }}</p>
+      <p><strong>Vendor_Name:</strong> {{ vendorName }}</p>
+    </div>
+  
+    <!-- Form for inspector to provide details -->
+    <form (ngSubmit)="submitCall()">
+      <!-- Add fields for ReviewStatus, Sr_No, Specification, Observation, Notes, Punch_Point, etc. -->
+      <!-- Example: <input type="text" [(ngModel)]="reviewStatus" name="reviewStatus" /> -->
+  
+      <!-- Add radio buttons for Inspection_Decision -->
+      <!-- Example: <input type="radio" [(ngModel)]="inspectionDecision" name="inspectionDecision" value="Accept" /> -->
+  
+      <!-- Add radio buttons for Release_IRN if Inspection_Decision is Accept -->
+      <!-- Example: <input type="radio" [(ngModel)]="releaseIRN" name="releaseIRN" value="Yes" /> -->
+  
+      <!-- Add file input for Inspection Photos and Inspection Reports -->
+      <!-- Example: <input type="file" (change)="handleFileChange($event, 'inspectionPhotos')" /> -->
+  
+      <!-- Add buttons for Save and Submit -->
+      <button type="button" (click)="saveCall()">Save</button>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

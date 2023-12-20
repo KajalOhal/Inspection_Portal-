@@ -1,0 +1,35 @@
+/* inspector-dashboard.component.css */
+
+/* Styling for the dashboard container */
+.dashboard-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Styling for the sidebar */
+  .sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+  }
+  
+  /* Styling for sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* Styling for sidebar links on hover */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Add additional styling as needed for your dashboard content */
+  

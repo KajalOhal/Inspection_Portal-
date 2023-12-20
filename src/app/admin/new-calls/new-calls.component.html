@@ -1,0 +1,31 @@
+<!-- new-calls.component.html -->
+<div class="new-calls-container">
+    <h2>Allocate Calls</h2>
+  
+    <div class="calls-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Call_No</th>
+            <th>Vendor_Name</th>
+            <th>Select Inspector</th>
+            <th>Assign Call</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let call of newCalls">
+            <td (click)="viewCallDetails(call.Call_No, call.Vendor_Name)">{{ call.Call_No }}</td>
+            <td>{{ call.Vendor_Name }}</td>
+            <td>
+              <!-- <select [(ngModel)]="call.selectedInspector" multiple> -->
+                <!-- Use ngFor to dynamically populate inspectors from a service -->
+                <option *ngFor="let inspector of inspectors">{{ inspector.name }}</option>
+              <!-- </select> -->
+            </td>
+            <td><button (click)="assignCall(call.Call_No)">Assign Call</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

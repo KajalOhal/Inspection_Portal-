@@ -1,0 +1,21 @@
+<div class="call-management-container">
+    <h2>Call Management</h2>
+  
+    <!-- Sidebar with navigation links -->
+    <div class="sidebar">
+      <ul>
+        <li (click)="navigateToNewCalls()">New Call</li>
+        <li (click)="navigateToOpenCalls()">Open Call</li>
+        <li (click)="navigateToHoldCalls()">Hold Call</li>
+        <li (click)="navigateToCloseCalls()">Close Call</li>
+        <li (click)="navigateToCancelledCalls()">Cancelled Call</li>
+        <li (click)="navigateToAssignedCalls()">Assigned Call</li>
+      </ul>
+    </div>
+  
+    <!-- Content area where components will be loaded based on navigation -->
+    <div class="content">
+      <!--<router-outlet></router-outlet> -->
+    </div>
+  </div>
+  

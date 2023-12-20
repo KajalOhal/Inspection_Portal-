@@ -1,0 +1,20 @@
+/* vendor-login.component.css */
+
+/* Styling for the login container */
+.login-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Styling for input fields and button */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the forgot password link */
+  .forgot-password {
+    margin-top: 10px;
+  }
+  
+  /* Additional styling as needed */
+  

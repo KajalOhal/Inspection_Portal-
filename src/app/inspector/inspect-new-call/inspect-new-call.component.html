@@ -1,0 +1,23 @@
+<!-- inspect-new-call.component.html -->
+<div class="inspect-new-call-container">
+    <h2>Inspect New Call</h2>
+  
+    <!-- Display Call_No and Vendor_Name -->
+    <div class="call-details">
+      <p><strong>Call_No:</strong> {{ callNo }}</p>
+      <p><strong>Vendor_Name:</strong> {{ vendorName }}</p>
+    </div>
+  
+    <!-- Display other call details (customize based on your actual data) -->
+    <div class="other-details">
+      <!-- Add HTML to display additional call details -->
+      <!-- Example: <p>{{ callDetails.someProperty }}</p> -->
+    </div>
+  
+    <!-- Buttons for actions -->
+    <div class="action-buttons">
+      <button (click)="startCall()">Start Call</button>
+      <button (click)="cancelCall()">Cancel Call</button>
+    </div>
+  </div>
+  

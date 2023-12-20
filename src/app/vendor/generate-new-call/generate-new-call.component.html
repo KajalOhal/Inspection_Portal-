@@ -1,0 +1,65 @@
+<div class="generate-call-container">
+    <h2>Raise Call</h2>
+  
+    <div class="form-container">
+      <label for="poNo">PO.No:</label>
+      <input type="text" id="poNo" [(ngModel)]="poNo" />
+  
+      <label for="poLineNo">PO Line No.:</label>
+      <input type="text" id="poLineNo" [(ngModel)]="poLineNo" />
+  
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" [(ngModel)]="itemName" />
+  
+      <label for="itemCode">Item Code:</label>
+      <input type="text" id="itemCode" [(ngModel)]="itemCode" />
+  
+      <label for="offeredQuantity">Offered Quantity:</label>
+      <input type="text" id="offeredQuantity" [(ngModel)]="offeredQuantity" />
+  
+      <label for="totalQuantity">Total Quantity:</label>
+      <input type="text" id="totalQuantity" [(ngModel)]="totalQuantity" />
+  
+      <label for="division">Division:</label>
+      <select id="division" [(ngModel)]="division">
+        <option value="Boiler">Boiler</option>
+        <option value="Sugar">Sugar</option>
+        <option value="Energy">Energy</option>
+        <option value="Spare">Spare</option>
+      </select>
+  
+      <label for="projectNo">Project No:</label>
+      <input type="text" id="projectNo" [(ngModel)]="projectNo" />
+  
+      <label for="wbsNo">WBS No:</label>
+      <input type="text" id="wbsNo" [(ngModel)]="wbsNo" />
+  
+      <label for="inspectionType">Inspection Type:</label>
+      <select id="inspectionType" [(ngModel)]="inspectionType">
+        <option value="Fabrication">Fabrication</option>
+        <option value="Machining">Machining</option>
+        <option value="Painting">Painting</option>
+        <option value="Bought Out">Bought Out</option>
+      </select>
+  
+      <label for="inspectionStage">Inspection Stage:</label>
+      <select id="inspectionStage" [(ngModel)]="inspectionStage">
+        <option value="Raw material">Raw material</option>
+        <option value="Inprocess">Inprocess</option>
+        <option value="Final">Final</option>
+        <option value="Document Review">Document Review</option>
+      </select>
+  
+      <label for="inspectionDate">Inspection Date:</label>
+      <input type="date" id="inspectionDate" [(ngModel)]="inspectionDate" />
+  
+      <label for="inspectionLocation">Inspection Location:</label>
+      <input type="text" id="inspectionLocation" [(ngModel)]="inspectionLocation" />
+  
+      <label for="vendorName">Vendor Name:</label>
+      <input type="text" id="vendorName" [(ngModel)]="vendorName" />
+  
+      <button (click)="generateCall()">Generate Call</button>
+    </div>
+  </div>
+  
